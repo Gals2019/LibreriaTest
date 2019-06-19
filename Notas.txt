@@ -1,0 +1,17 @@
+1) Dentro de database/migrations/ hay 2 archivos que generan unas tablas por defecto
+en la base de datos de mysql.
+Se borran para crear archivos con las tablas personalizadas de mi proyecto.
+
+2) Para reemplazar estos 2 archivos, en la consola (ctrl + ñ) se tipea 'php artisan mahe:migration create_Nombre_de_tabla'
+esto genera un archivo php en la carpeta database/migrations con el timestamp de la fecha en la cual 
+es creado el archivo y el nombre que le di. dentro hay 2 metodos, el up, que crea la tabla con todas las 
+columnas y el metodo down para revertir el up.
+
+3) Para que artisan migre las tablas desde migrate debemos ejecutar el comando 'php artisan migrate' y esto genera
+las tablas en la bd.
+
+4) para volver atras la migration usamos el comando 'php artisan migrate:reset', esto elimina las tablas creadas.
+
+5) para vaciar la tabla se usa el comando 'php artisan migrate:refresh'
+
+
