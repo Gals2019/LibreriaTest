@@ -15,3 +15,4 @@ las tablas en la bd.
 5) para vaciar la tabla se usa el comando 'php artisan migrate:refresh'
 
 
+6) Para actualizar la version de laravel se usa el comando 'composer update'
