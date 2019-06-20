@@ -19,8 +19,8 @@ class CreateLibroTable extends Migration
             $table->string('isbn', 30);
             $table->string('autor', 100);
             $table->unsignedTinyInteger('cantidad');
-            $table->string('editorial',50);
-            $table->string('foto',100);
+            $table->string('editorial',50)->nullable();
+            $table->string('foto',100)->nullable();
             $table->timestamps();
         });
     }
