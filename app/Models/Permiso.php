@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Permiso extends Model
+{
+    /*===============
+    POR CONVENCION, LARAVEL DETECTA LOS MODELOS EN SINGULAR Y AUTOMATICAMENTE A LA TABLA CORRESPONDIENTE EN
+    PLURAL. ES DECIR QUE EN EL ER DE LA BD SE DEBEN COLOCAR LOS NOMBRES DE LAS TABLAS EN PLURAL AL USAR
+    LARAVEL. PARA SOLUCIONAR ESO SE GENERARA UNA VARIABLE CON EL NOMBRE DE LA TABLA COMO LA 
+    TENGO EN LA BD
+    ================= */
+
+    protected $table ='permiso';
+}

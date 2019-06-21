@@ -16,3 +16,42 @@ las tablas en la bd.
 
 
 6) Para actualizar la version de laravel se usa el comando 'composer update'
+
+SEEDERS
+
+rellenan tablas con datos aleatorios para poder hacer pruebas en la BD.
+
+1) para crear un seeder se ejecuta el comando 'php artisan make:seeder TablaRolSeeder (Este ultimo es el nombre de la 
+seeder a crear)'.
+
+2)Modificar archivo database/seeds/databaseSeeder.php.
+3) Ejecutar el comando 'php artisan db:seed'
+
+FACTORY
+
+1) Los factory sirven para llenar de datos 'Falsos' tablas de la BD
+2) El comando a utilizar es 'php artisan make:factory'
+3) Un factory usa Modelos para trabajar
+4)desde el seeder llamamos a la clase con la que se trabajara.
+5)para ejecutar el factory se usa 'php artisan db:seed'
+
+MODELOS
+
+1) Se debe crear una carpeta Models dentro de la carpeta APP, esta carpeta Models Tendrá todos los modelos que 
+se usarán.
+2) Para crear un Modelo se usa el comando 'php artisan make:model CARPETA/NombreModelo
+3)POR CONVENCION, LARAVEL DETECTA LOS MODELOS EN SINGULAR Y AUTOMATICAMENTE A LA TABLA CORRESPONDIENTE EN
+    PLURAL. ES DECIR QUE EN EL ER DE LA BD SE DEBEN COLOCAR LOS NOMBRES DE LAS TABLAS EN PLURAL AL USAR
+    LARAVEL. PARA SOLUCIONAR ESO SE GENERARA UNA VARIABLE CON EL NOMBRE DE LA TABLA COMO LA 
+    TENGO EN LA BD.
+
+RUTAS
+
+1) Dentro de la carpeta 'Routes/web.php' estan las rutas de la web. (VER ANOTACIONES DENTRO DE ESE ARCHIVO)
+
+CONTROLADORES
+
+1) para crear un controlador en 'app/Http/Controllers' se usa el comando 
+'php artisan make:controller NOMBRECONTROLADOR -r'
+
+
